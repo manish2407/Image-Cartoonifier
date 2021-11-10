@@ -10,3 +10,10 @@ import tkinter as tk  #import tkinter module for gui
 from tkinter import filedialog
 from tkinter import *
 from PIL import ImageTk, Image
+
+#Building a filebox to choose a particular image
+""" fileopenbox opens the box to choose file
+and help us store file path as string """
+def upload() :
+    ImagePath = easygui.fileopenbox()
+    cartoonify(ImagePath)
